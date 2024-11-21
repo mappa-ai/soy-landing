@@ -27,7 +27,7 @@ function CardSesion({ sesion, title, description, logo }: CardSectionProps) {
         <p className="tracking-[5px] font-medium text-base text-lightgray uppercase pt-5">
           {sesion}
         </p>
-        <h6 className="text-xl text-midgray pb-5">{title}</h6>
+        <h6 className="text-xl text-midgray pb-5 text-center">{title}</h6>
         <CardDescription className="text-center text-midgray text-base">
           {description}
         </CardDescription>
@@ -77,7 +77,7 @@ export default function SesionSection() {
   return (
     <div className="bg-white">
       <div className="py-32 px-5 lg:px-20 hidden md:block ">
-        <div className="flex gap-3 justify-between flex-wrap">
+        <div className="flex gap-3 justify-center lg:justify-between flex-wrap lg:flex-nowrap ">
           <CardSesion
             sesion="sesión 1"
             title="LO QUE TE DIERON"
